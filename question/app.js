@@ -126,5 +126,5 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (let i = 0; i < mixed.length; i++ ) {
     let index = mixed[i];
-    console.log(typeof index === 'number' && index % 2 === 0 ? 'even' : typeof index === 'number' && index % 2 === 1 ? 'odd' : 'not number');
+    console.log(typeof index === 'number' && index % 2 === 0 ? 'even' : typeof index === 'number' ? 'odd' : 'not number');
 }
