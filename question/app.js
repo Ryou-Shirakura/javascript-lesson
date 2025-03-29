@@ -1,4 +1,4 @@
-//JS基礎
+//section5 基礎
 // Q1
 let nickname = '白倉'
 let age = '26'
@@ -97,8 +97,46 @@ const result = remainder(7, 3);
 console.log(`5 を 3 で割った余りは ${result} です。`);
 
 // Q10
-function foo() {
-    let x = 1;
-}
-console.log(x);
 // letで定義した x は foo関数内で定義しているため、console.log(x);でxを参照しようとするとスコープ対象がのため、エラーが表示される。
+
+//section6 応用
+// Q1
+let randomMath = Math.floor(Math.random() * 10);
+console.log(randomMath);
+
+// Q2
+setTimeout(() => {
+    console.log('Hello World!');
+}, 3000);
+
+// Q3
+let num = 5;
+
+if (num > 0) {
+    console.log('num is greater than 0');
+} else if (num < 0) {
+    console.log('num is less than 0');
+} else {
+    console.log('num is 0');
+};
+
+// Q4
+let number = [];
+for (let i = 0; i < 99; i++ ) {
+     number.push(i);
+}
+console.log(number);
+
+// Q5
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (let i = 0; i < mixed.length; i++ ) {
+    let index = mixed[i];
+    if (typeof index === 'number' && index % 2 === 0) {
+        console.log('even');
+    } else if (typeof index === 'number' && index % 2 === 1) {
+        console.log('odd');
+    }else {
+        console.log('not number');
+    }
+}
