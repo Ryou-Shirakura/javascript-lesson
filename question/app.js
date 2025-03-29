@@ -122,7 +122,7 @@ if (num > 0) {
 
 // Q4
 let number = [];
-for (let i = 0; i < 99; i++ ) {
+for (let i = 0; i < 100; i++ ) {
      number.push(i);
 }
 console.log(number);
