@@ -110,15 +110,9 @@ setTimeout(() => {
 }, 3000);
 
 // Q3
-let num = 5;
+let num = 0;
 
-if (num > 0) {
-    console.log('num is greater than 0');
-} else if (num < 0) {
-    console.log('num is less than 0');
-} else {
-    console.log('num is 0');
-};
+console.log(num > 0 ? 'num is greater than 0' : num < 0 ? 'num is less than 0' : 'num is 0');
 
 // Q4
 let number = [];
@@ -132,11 +126,5 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (let i = 0; i < mixed.length; i++ ) {
     let index = mixed[i];
-    if (typeof index === 'number' && index % 2 === 0) {
-        console.log('even');
-    } else if (typeof index === 'number' && index % 2 === 1) {
-        console.log('odd');
-    }else {
-        console.log('not number');
-    }
+    console.log(typeof index === 'number' && index % 2 === 0 ? 'even' : typeof index === 'number' && index % 2 === 1 ? 'odd' : 'not number');
 }
